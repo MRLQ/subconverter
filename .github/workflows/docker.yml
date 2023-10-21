@@ -249,7 +249,7 @@ jobs:
         with:
           platforms: linux/arm64
           context: scripts/
-          tags: tindy2013/subconverter:latest
+          tags: lqnikio7258/subconverter:latest
           build-args: |
             SHA=${{ steps.vars.outputs.sha_short }}
             THREADS=2
@@ -271,7 +271,7 @@ jobs:
         with:
           platforms: linux/arm64
           context: scripts/
-          tags: tindy2013/subconverter:${{steps.version.outputs.result}}
+          tags: lqnikio7258/subconverter:${{steps.version.outputs.result}}
           build-args: |
             THREADS=2
           outputs: type=image,push=true
@@ -342,7 +342,7 @@ jobs:
 #        with:
 #          platforms: linux/amd64,linux/arm/v7,linux/arm64,linux/386
 #          context: scripts/
-#          tags: tindy2013/subconverter:latest
+#          tags: lqnikio7258/subconverter:latest
 #          build-args: |
 #            SHA=${{ steps.vars.outputs.sha_short }}
 #            THREADS=1
